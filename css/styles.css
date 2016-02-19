@@ -1,0 +1,266 @@
+/* Global Layout Set-up */
+* {	
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.3em;
+	color: #545454;	
+}
+h1{
+	font-size: 1.7em;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+h3 {
+	padding: 0;
+	text-align: center;
+}
+/* Link Styles */
+a {
+  	text-decoration: none;
+  	color: #545454;
+ }
+nav ul {
+	padding: 0;
+	width:90%;
+	margin: 20px auto;
+	list-style: none;
+	border-radius: 5px;	
+}
+nav li{
+	margin: 0 0 5px 0;
+	padding: 8px 0;
+	background: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav li a {
+	padding: 10px 60px;
+}
+nav li a:hover {
+	color: #999;
+}
+.name,
+nav li {
+	text-align: center;
+}
+.name {
+	width: 80%;
+	margin: auto;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dcdcdc;
+}
+header,
+.contact-info,
+footer {
+	background: #f4f4f4;	
+}
+.main-info {
+	padding-top: 30px;
+	text-align: center;
+}
+.main-info p {
+	line-height: 1.5em;
+	color: grey;
+	padding: 20px 30px;
+}
+.image {
+	max-width: 60%;
+	margin: 0 auto;
+}
+.port-header {
+	font-weight: bold;
+	text-align: center;
+	padding: 50px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+.portfolio h3 {
+	
+	padding: 20px;
+	text-align: center;
+}
+.project-list {
+	padding:0 0 20px 0;
+	list-style: none;
+}
+.project-list li {
+	text-align: center;	
+}
+.port-image {
+	max-width: 90%;
+	box-shadow: 5px 5px 6px rgba(0,0,0, .3);
+}
+.project-list p {
+	line-height: 1.5em;
+	padding: 0 30px 30px 30px;
+	color: grey;
+}
+.contact-info h3{
+	text-transform: uppercase;
+	padding: 70px 0 40px 0;
+}
+.contact-info p {
+	line-height: 1.5em;
+	padding: 0 20px 30px 20px;
+}
+.phone-email {
+	border-bottom: 1px solid #dcdcdc;
+	margin: 0 15px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.phone-email p {
+	padding-bottom: 20px;
+}
+.phone-email span {
+	padding-left: 10px;
+	font-weight: bold;
+}
+footer {
+	height: 80px;
+}
+footer ul {
+	padding: 0;
+	list-style: none;
+}
+.bottom-name,
+.back-to-top {
+	font-weight: bold;
+	padding: 25px 0;
+}
+.bottom-name {
+	float: left;
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+.back-to-top {
+	float: right;
+	text-transform: uppercase;
+	padding-right: 20px;
+}
+.back-to-top a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+.add-menu {
+	display: none;
+}
+.clearfix:after {
+	content: " "; 
+	visibility: hidden;
+	display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Styles for larger screens */
+ 
+@media only screen and (min-width: 768px){
+
+.name {
+	margin: 0 auto;
+}
+.name h1 {
+	margin-bottom: 0;
+}
+nav ul {
+	margin: 0 auto;
+	width: 310px;
+}
+nav ul li{
+	background: #f4f4f4;
+	display: inline-block;
+}
+nav ul li a {
+	padding: 0 15px;
+}
+.main-info {
+	padding-bottom: 60px;
+}
+.main-info p {
+	text-align: left;
+	max-width: 45%; 
+	padding-right: 60px;
+}
+.image {
+	padding-right: 30px;
+	max-width: 40%;
+	float: right;
+}
+.project-list  li img{
+	max-width: 95%;	
+	box-shadow: 5px 5px 8px rgba(0,0,0, .2);
+}
+.project-list li {
+	max-width: 49%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.project-list li p {
+	text-align: center;
+	width: 80%;
+}
+.back-to-top {
+	display: none;
+}
+.add-menu {
+	display: inline-block;
+	float: right;
+	margin: 25px 10px 0 0;
+}
+.add-menu a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+.contact-info p {
+	max-width: 60%;
+	margin: 0 auto;
+}
+.add-menu li{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+	padding: 0 20px 0 0;
+}
+.bottom-name {
+	padding-left: 40px;
+}
+}
+@media only screen and (min-width: 1020px){
+
+.wrapper {
+	max-width: 1020px;
+	background: #f4f4f4;
+	margin: 0 auto;
+}
+.name {
+	padding: 20px 20px;
+	margin: auto;
+	padding-left: 50px;
+}
+.main-info {
+	padding: 20px 20px 60px 20px;
+}
+nav ul {
+	float: right;
+	width: 30%;
+	padding: 30px 50px 10px 0;
+}
+.portfolio {
+	max-width: 95%;
+	background: white;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.project-list li {
+
+	max-width: 33%;
+}
+.contact-info p {
+	max-width: 50%;
+}
+}
